@@ -15,7 +15,7 @@ export default function ContactForm() {
             Thank You!
           </h3>
           <p className="text-gray-600">
-            Your message has been sent successfully. We'll get back to you soon!
+            Your message has been sent successfully. We&apos;ll get back to you soon!
           </p>
         </div>
       </div>
