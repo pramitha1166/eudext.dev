@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import ContactForm from '@/components/ContactForm';
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, PhoneIcon, MapPinIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 
 export default function ContactPage() {
   return (
@@ -47,6 +47,16 @@ export default function ContactPage() {
                       <h3 className="text-sm font-medium text-gray-900">Phone</h3>
                       <a href="tel:+94785770425" className="text-sm text-gray-600 hover:text-purple-600 transition-colors">
                         +94 78 577 0425
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <ChatBubbleLeftRightIcon className="h-6 w-6 text-green-600" />
+                    <div className="ml-4">
+                      <h3 className="text-sm font-medium text-gray-900">WhatsApp</h3>
+                      <a href="https://wa.me/94701949599" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
+                        +94 70 194 9599
                       </a>
                     </div>
                   </div>

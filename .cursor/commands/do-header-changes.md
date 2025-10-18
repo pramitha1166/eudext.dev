@@ -1,0 +1,1 @@
+Add COntact and Whats app Header button to menu when app in in mobile view. 

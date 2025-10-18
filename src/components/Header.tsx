@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { Bars3Icon, XMarkIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, PaperAirplaneIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import { navigationItems } from '@/data/navigation';
 
 export default function Header() {
@@ -91,8 +91,25 @@ export default function Header() {
             })}
           </div>
           
-          {/* Contact button - right aligned */}
-          <div className="flex-shrink-0">
+          {/* Contact buttons - right aligned */}
+          <div className="flex-shrink-0 flex items-center gap-3 hidden lg:flex">
+            {/* WhatsApp button */}
+            <a
+              href="https://wa.me/94701949599"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-lg bg-green-600 text-white hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition-all duration-300 shadow-sm flex items-center ${
+                isScrolled 
+                  ? 'px-3 py-3' 
+                  : 'px-4 py-2.5 gap-2'
+              }`}
+              title="Chat on WhatsApp"
+            >
+              {!isScrolled && <span className="text-sm font-semibold">WhatsApp</span>}
+              <ChatBubbleLeftRightIcon className="h-4 w-4" />
+            </a>
+            
+            {/* Contact button */}
             <Link
               href="/contact"
               className={`rounded-lg bg-gray-900 text-white hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 transition-all duration-300 shadow-sm flex items-center ${
@@ -152,13 +169,28 @@ export default function Header() {
                   );
                 })}
               </div>
-              <div className="py-6">
-                <Link
-                  href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              <div className="py-6 space-y-3">
+                <a
+                  href="https://wa.me/94701949599"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="-mx-3 block rounded-lg px-4 py-3 text-base font-semibold leading-7 text-white bg-green-600 hover:bg-green-700 transition-colors shadow-sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Get in touch
+                  <div className="flex items-center justify-center gap-2">
+                    <ChatBubbleLeftRightIcon className="h-5 w-5" />
+                    Chat on WhatsApp
+                  </div>
+                </a>
+                <Link
+                  href="/contact"
+                  className="-mx-3 block rounded-lg px-4 py-3 text-base font-semibold leading-7 text-white bg-gray-900 hover:bg-gray-800 transition-colors shadow-sm"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    <PaperAirplaneIcon className="h-5 w-5" />
+                    Contact Us
+                  </div>
                 </Link>
               </div>
             </div>
