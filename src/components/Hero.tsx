@@ -1,3 +1,4 @@
+import { ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -32,15 +33,15 @@ export default function Hero() {
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
             We work with startups and companies of all sizes to build custom apps and software which make a real difference.
           </p>
-          
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <a
               href="https://wa.me/94701949599"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md bg-green-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition-colors"
+              className="rounded-md bg-green-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition-colors flex items-center gap-2"
             >
-              Connect WhatsApp
+              <ChatBubbleLeftRightIcon className="h-4 w-4" />
+              WhatsApp
             </a>
             <Link
               href="/services"
