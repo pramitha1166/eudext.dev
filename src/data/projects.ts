@@ -1,59 +1,33 @@
 import { Project } from '@/types';
 
 export const projects: Project[] = [
- 
+
   {
     id: '1',
-    title: 'Organica Lounge Kandy',
-    description: 'Hotel Menu Management System for Organica Lounge Kandy with comprehensive restaurant operations.',
-    longDescription: 'A comprehensive hotel menu management system designed specifically for Organica Lounge Kandy. The system streamlines restaurant operations including menu management, order processing, inventory tracking, and customer service. Features include real-time menu updates, table management, payment processing, and detailed analytics for restaurant performance. The system is built to handle high-volume operations while maintaining efficiency and providing excellent customer experience.',
-    image: '/images/1_1.png',
+    title: 'SalonMe.lk',
+    description: 'SaaS salon booking platform that lets customers discover and book salons, spas, and barbershops with instant confirmation.',
+    longDescription: 'SalonMe.lk is a multi-tenant SaaS booking platform for the beauty and wellness industry. Customers can search salons, spas, and barbershops by service, category, and location, browse curated listings, and book appointments with instant confirmation. Salon owners get a dedicated dashboard to manage their service catalog, staff schedules, availability, appointments, and customer records. The platform includes multi-language support, automated booking reminders, customer reviews and ratings, revenue and performance analytics, and a subscription-based plan model for salon partners. Built mobile-first so both customers and salon staff can manage bookings from any device.',
+    image: '/images/salonme.lk.png',
     images: [
-      '/images/1_1.png',
-      '/images/1_2.png',
-      '/images/1_3.png',
-      '/images/1_4.png',
-      '/images/1_5.png'
+      '/images/salonme.lk.png'
     ],
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Material-UI'],
-    // githubUrl: 'https://github.com/username/organica-lounge',
-    liveUrl: 'https://organica-lounge-demo.vercel.app',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Prisma'],
+    liveUrl: 'https://salonme.lk',
     featured: true,
-    date: '2024-12-01'
+    date: '2026-01-15'
   },
   {
     id: '2',
-    title: 'ELITEHR',
-    description: 'Comprehensive HR Management System for streamlined human resources operations and employee management.',
-    longDescription: 'ELITEHR is a powerful human resources management system designed to automate and streamline HR operations. The platform provides comprehensive employee management including employee profiles, attendance tracking, leave management, payroll processing, performance evaluations, and recruitment workflows. Features include role-based access control, automated notifications, detailed reporting and analytics, document management, and integration capabilities. Built to handle organizations of all sizes with scalable architecture and intuitive user interface.',
-    image: '/images/2_1.png',
+    title: 'WolfCart.shop',
+    description: 'Multi-vendor e-commerce platform and store builder that gets Sri Lankan merchants selling online in minutes.',
+    longDescription: 'WolfCart.shop is a multi-vendor e-commerce platform and store builder designed for Sri Lankan merchants. Sellers sign up and get a complete ecommerce storefront generated automatically — no monthly fees and no technical skills required. The platform handles product and inventory management, customizable storefront themes, order and delivery workflows, and local payment acceptance through DirectPay. Merchants manage their entire store from their phone, while the marketplace layer provides vendor onboarding, commission handling, and a shared customer-facing catalog. The commission-based model means WolfCart only earns when merchants earn.',
+    image: '/images/wolfcart.shop.png',
     images: [
-      '/images/2_1.png',
-      '/images/2_2.png',
-      '/images/2_3.png',
-      '/images/2_4.png',
-      '/images/2_5.png'
+      '/images/wolfcart.shop.png'
     ],
-    technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Prisma', 'DirectPay'],
+    liveUrl: 'https://wolfcart.shop',
     featured: true,
-    date: '2024-11-15'
-  },
-  {
-    id: '3',
-    title: 'Salon One',
-    description: 'Complete salon management solution for booking, scheduling, and customer relationship management.',
-    longDescription: 'Salon One is a comprehensive salon management system that helps salon owners manage their business operations efficiently. The platform includes appointment scheduling, customer management, service catalog, staff management, inventory tracking, and payment processing. Features include automated reminders, customer history tracking, revenue analytics, multi-location support, and mobile-responsive design. The system is designed to improve customer experience while helping salon owners grow their business through better organization and data-driven insights.',
-    image: '/images/3_1.png',
-    images: [
-      '/images/3_1.png',
-      '/images/3_2.png',
-      '/images/3_4.png',
-      '/images/3_5.png',
-      '/images/3_6.png',
-      '/images/3_7.png'
-    ],
-    technologies: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Express', 'Material-UI'],
-    featured: true,
-    date: '2024-10-20'
+    date: '2026-03-10'
   }
 ];
